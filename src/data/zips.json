@@ -1,0 +1,640 @@
+{
+	"supplementalData": {
+		"postalCodeData": {
+			"postCodeRegex": [
+				{
+					"_territoryId": "GB",
+					"__text": "GIR[ ]?0AA|((AB|AL|B|BA|BB|BD|BH|BL|BN|BR|BS|BT|CA|CB|CF|CH|CM|CO|CR|CT|CV|CW|DA|DD|DE|DG|DH|DL|DN|DT|DY|E|EC|EH|EN|EX|FK|FY|G|GL|GY|GU|HA|HD|HG|HP|HR|HS|HU|HX|IG|IM|IP|IV|JE|KA|KT|KW|KY|L|LA|LD|LE|LL|LN|LS|LU|M|ME|MK|ML|N|NE|NG|NN|NP|NR|NW|OL|OX|PA|PE|PH|PL|PO|PR|RG|RH|RM|S|SA|SE|SG|SK|SL|SM|SN|SO|SP|SR|SS|ST|SW|SY|TA|TD|TF|TN|TQ|TR|TS|TW|UB|W|WA|WC|WD|WF|WN|WR|WS|WV|YO|ZE)(\\d[\\dA-Z]?[ ]?\\d[ABD-HJLN-UW-Z]{2}))|BFPO[ ]?\\d{1,4}"
+				},
+				{
+					"_territoryId": "JE",
+					"__text": "JE\\d[\\dA-Z]?[ ]?\\d[ABD-HJLN-UW-Z]{2}"
+				},
+				{
+					"_territoryId": "GG",
+					"__text": "GY\\d[\\dA-Z]?[ ]?\\d[ABD-HJLN-UW-Z]{2}"
+				},
+				{
+					"_territoryId": "IM",
+					"__text": "IM\\d[\\dA-Z]?[ ]?\\d[ABD-HJLN-UW-Z]{2}"
+				},
+				{
+					"_territoryId": "US",
+					"__text": "\\d{5}([ \\-]\\d{4})?"
+				},
+				{
+					"_territoryId": "CA",
+					"__text": "[ABCEGHJKLMNPRSTVXY]\\d[ABCEGHJ-NPRSTV-Z][ ]?\\d[ABCEGHJ-NPRSTV-Z]\\d"
+				},
+				{
+					"_territoryId": "DE",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "JP",
+					"__text": "\\d{3}-\\d{4}"
+				},
+				{
+					"_territoryId": "FR",
+					"__text": "\\d{2}[ ]?\\d{3}"
+				},
+				{
+					"_territoryId": "AU",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "IT",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "CH",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "AT",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "ES",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "NL",
+					"__text": "\\d{4}[ ]?[A-Z]{2}"
+				},
+				{
+					"_territoryId": "BE",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "DK",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "SE",
+					"__text": "\\d{3}[ ]?\\d{2}"
+				},
+				{
+					"_territoryId": "NO",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "BR",
+					"__text": "\\d{5}[\\-]?\\d{3}"
+				},
+				{
+					"_territoryId": "PT",
+					"__text": "\\d{4}([\\-]\\d{3})?"
+				},
+				{
+					"_territoryId": "FI",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "AX",
+					"__text": "22\\d{3}"
+				},
+				{
+					"_territoryId": "KR",
+					"__text": "\\d{3}[\\-]\\d{3}"
+				},
+				{
+					"_territoryId": "CN",
+					"__text": "\\d{6}"
+				},
+				{
+					"_territoryId": "TW",
+					"__text": "\\d{3}(\\d{2})?"
+				},
+				{
+					"_territoryId": "SG",
+					"__text": "\\d{6}"
+				},
+				{
+					"_territoryId": "DZ",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "AD",
+					"__text": "AD\\d{3}"
+				},
+				{
+					"_territoryId": "AR",
+					"__text": "([A-HJ-NP-Z])?\\d{4}([A-Z]{3})?"
+				},
+				{
+					"_territoryId": "AM",
+					"__text": "(37)?\\d{4}"
+				},
+				{
+					"_territoryId": "AZ",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "BH",
+					"__text": "((1[0-2]|[2-9])\\d{2})?"
+				},
+				{
+					"_territoryId": "BD",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "BB",
+					"__text": "(BB\\d{5})?"
+				},
+				{
+					"_territoryId": "BY",
+					"__text": "\\d{6}"
+				},
+				{
+					"_territoryId": "BM",
+					"__text": "[A-Z]{2}[ ]?[A-Z0-9]{2}"
+				},
+				{
+					"_territoryId": "BA",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "IO",
+					"__text": "BBND 1ZZ"
+				},
+				{
+					"_territoryId": "BN",
+					"__text": "[A-Z]{2}[ ]?\\d{4}"
+				},
+				{
+					"_territoryId": "BG",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "KH",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "CV",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "CL",
+					"__text": "\\d{7}"
+				},
+				{
+					"_territoryId": "CR",
+					"__text": "\\d{4,5}|\\d{3}-\\d{4}"
+				},
+				{
+					"_territoryId": "HR",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "CY",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "CZ",
+					"__text": "\\d{3}[ ]?\\d{2}"
+				},
+				{
+					"_territoryId": "DO",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "EC",
+					"__text": "([A-Z]\\d{4}[A-Z]|(?:[A-Z]{2})?\\d{6})?"
+				},
+				{
+					"_territoryId": "EG",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "EE",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "FO",
+					"__text": "\\d{3}"
+				},
+				{
+					"_territoryId": "GE",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "GR",
+					"__text": "\\d{3}[ ]?\\d{2}"
+				},
+				{
+					"_territoryId": "GL",
+					"__text": "39\\d{2}"
+				},
+				{
+					"_territoryId": "GT",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "HT",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "HN",
+					"__text": "(?:\\d{5})?"
+				},
+				{
+					"_territoryId": "HU",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "IS",
+					"__text": "\\d{3}"
+				},
+				{
+					"_territoryId": "IN",
+					"__text": "\\d{6}"
+				},
+				{
+					"_territoryId": "ID",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "IL",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "JO",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "KZ",
+					"__text": "\\d{6}"
+				},
+				{
+					"_territoryId": "KE",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "KW",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "LA",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "LV",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "LB",
+					"__text": "(\\d{4}([ ]?\\d{4})?)?"
+				},
+				{
+					"_territoryId": "LI",
+					"__text": "(948[5-9])|(949[0-7])"
+				},
+				{
+					"_territoryId": "LT",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "LU",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "MK",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "MY",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "MV",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "MT",
+					"__text": "[A-Z]{3}[ ]?\\d{2,4}"
+				},
+				{
+					"_territoryId": "MU",
+					"__text": "(\\d{3}[A-Z]{2}\\d{3})?"
+				},
+				{
+					"_territoryId": "MX",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "MD",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "MC",
+					"__text": "980\\d{2}"
+				},
+				{
+					"_territoryId": "MA",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "NP",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "NZ",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "NI",
+					"__text": "((\\d{4}-)?\\d{3}-\\d{3}(-\\d{1})?)?"
+				},
+				{
+					"_territoryId": "NG",
+					"__text": "(\\d{6})?"
+				},
+				{
+					"_territoryId": "OM",
+					"__text": "(PC )?\\d{3}"
+				},
+				{
+					"_territoryId": "PK",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "PY",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "PH",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "PL",
+					"__text": "\\d{2}-\\d{3}"
+				},
+				{
+					"_territoryId": "PR",
+					"__text": "00[679]\\d{2}([ \\-]\\d{4})?"
+				},
+				{
+					"_territoryId": "RO",
+					"__text": "\\d{6}"
+				},
+				{
+					"_territoryId": "RU",
+					"__text": "\\d{6}"
+				},
+				{
+					"_territoryId": "SM",
+					"__text": "4789\\d"
+				},
+				{
+					"_territoryId": "SA",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "SN",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "SK",
+					"__text": "\\d{3}[ ]?\\d{2}"
+				},
+				{
+					"_territoryId": "SI",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "ZA",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "LK",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "TJ",
+					"__text": "\\d{6}"
+				},
+				{
+					"_territoryId": "TH",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "TN",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "TR",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "TM",
+					"__text": "\\d{6}"
+				},
+				{
+					"_territoryId": "UA",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "UY",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "UZ",
+					"__text": "\\d{6}"
+				},
+				{
+					"_territoryId": "VA",
+					"__text": "00120"
+				},
+				{
+					"_territoryId": "VE",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "ZM",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "AS",
+					"__text": "96799"
+				},
+				{
+					"_territoryId": "CC",
+					"__text": "6799"
+				},
+				{
+					"_territoryId": "CK",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "RS",
+					"__text": "\\d{6}"
+				},
+				{
+					"_territoryId": "ME",
+					"__text": "8\\d{4}"
+				},
+				{
+					"_territoryId": "CS",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "YU",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "CX",
+					"__text": "6798"
+				},
+				{
+					"_territoryId": "ET",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "FK",
+					"__text": "FIQQ 1ZZ"
+				},
+				{
+					"_territoryId": "NF",
+					"__text": "2899"
+				},
+				{
+					"_territoryId": "FM",
+					"__text": "(9694[1-4])([ \\-]\\d{4})?"
+				},
+				{
+					"_territoryId": "GF",
+					"__text": "9[78]3\\d{2}"
+				},
+				{
+					"_territoryId": "GN",
+					"__text": "\\d{3}"
+				},
+				{
+					"_territoryId": "GP",
+					"__text": "9[78][01]\\d{2}"
+				},
+				{
+					"_territoryId": "GS",
+					"__text": "SIQQ 1ZZ"
+				},
+				{
+					"_territoryId": "GU",
+					"__text": "969[123]\\d([ \\-]\\d{4})?"
+				},
+				{
+					"_territoryId": "GW",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "HM",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "IQ",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "KG",
+					"__text": "\\d{6}"
+				},
+				{
+					"_territoryId": "LR",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "LS",
+					"__text": "\\d{3}"
+				},
+				{
+					"_territoryId": "MG",
+					"__text": "\\d{3}"
+				},
+				{
+					"_territoryId": "MH",
+					"__text": "969[67]\\d([ \\-]\\d{4})?"
+				},
+				{
+					"_territoryId": "MN",
+					"__text": "\\d{6}"
+				},
+				{
+					"_territoryId": "MP",
+					"__text": "9695[012]([ \\-]\\d{4})?"
+				},
+				{
+					"_territoryId": "MQ",
+					"__text": "9[78]2\\d{2}"
+				},
+				{
+					"_territoryId": "NC",
+					"__text": "988\\d{2}"
+				},
+				{
+					"_territoryId": "NE",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "VI",
+					"__text": "008(([0-4]\\d)|(5[01]))([ \\-]\\d{4})?"
+				},
+				{
+					"_territoryId": "PF",
+					"__text": "987\\d{2}"
+				},
+				{
+					"_territoryId": "PG",
+					"__text": "\\d{3}"
+				},
+				{
+					"_territoryId": "PM",
+					"__text": "9[78]5\\d{2}"
+				},
+				{
+					"_territoryId": "PN",
+					"__text": "PCRN 1ZZ"
+				},
+				{
+					"_territoryId": "PW",
+					"__text": "96940"
+				},
+				{
+					"_territoryId": "RE",
+					"__text": "9[78]4\\d{2}"
+				},
+				{
+					"_territoryId": "SH",
+					"__text": "(ASCN|STHL) 1ZZ"
+				},
+				{
+					"_territoryId": "SJ",
+					"__text": "\\d{4}"
+				},
+				{
+					"_territoryId": "SO",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "SZ",
+					"__text": "[HLMS]\\d{3}"
+				},
+				{
+					"_territoryId": "TC",
+					"__text": "TKCA 1ZZ"
+				},
+				{
+					"_territoryId": "WF",
+					"__text": "986\\d{2}"
+				},
+				{
+					"_territoryId": "XK",
+					"__text": "\\d{5}"
+				},
+				{
+					"_territoryId": "YT",
+					"__text": "976\\d{2}"
+				}
+			]
+		}
+	}
+}
