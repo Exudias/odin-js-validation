@@ -66,6 +66,12 @@ form > * {
 .form-input {
     height: 100%;
     flex: 1;
+
+    border-radius: 4px;
+}
+
+.form-input:invalid {
+    border-bottom: 4px solid red;
 }
 
 .form-item ~ .error {
@@ -87,4 +93,12 @@ form > * {
     border: 0;
     border-radius: 16px;
     font-size: 24px;
+}
+
+.submit-div input[type=submit]:hover {
+    background-color: #ddd;
+}
+
+.submit-div input[type=submit]:active {
+    background-color: #bbb;
 }

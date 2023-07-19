@@ -24,6 +24,7 @@ const country = document.querySelector("#country");
 const zip = document.querySelector("#zip");
 const pass = document.querySelector("#pass");
 const passConfirm = document.querySelector("#pass-confirm");
+const form = document.querySelector("#form");
 
 // Populate select
 namesAndCodes.forEach(item => {
@@ -50,7 +51,17 @@ email.onchange = () => {
     }
 };
 
-zip.onchange = () => {
+country.onchange = () => {
+    if (zip.value)
+    {
+        validateZip();
+    }
+};
+
+zip.onchange = validateZip;
+
+function validateZip()
+{
     const countryCode = country.value;
     const constraint = new RegExp(codeToZipRegex[countryCode], "");
     const matches = constraint.test(zip.value);
@@ -58,9 +69,66 @@ zip.onchange = () => {
     if (!matches)
     {
         zip.parentElement.nextElementSibling.textContent = "Zip code is invalid!";
+        zip.setCustomValidity("Zip code is invalid!");
     }
     else
     {
         zip.parentElement.nextElementSibling.textContent = "";
+        zip.setCustomValidity("");
     }
-};
+}
+
+function updatePass()
+{
+    const password = pass.value;
+    if (password.length >= 8)
+    {
+        pass.parentElement.nextElementSibling.textContent = "";
+        pass.setCustomValidity("");
+    }
+    else
+    {
+        pass.parentElement.nextElementSibling.textContent = "Password must be 8+ symbols long!";
+        pass.setCustomValidity("Password must be 8+ symbols long!");
+    }
+}
+
+function updatePassConfirm()
+{
+    if (pass.value && pass.checkValidity())
+    {
+        if (pass.value === passConfirm.value)
+        {
+            passConfirm.parentElement.nextElementSibling.textContent = "";
+            passConfirm.setCustomValidity("");
+        }
+        else
+        {   
+            passConfirm.parentElement.nextElementSibling.textContent = "Passwords must match!";
+            passConfirm.setCustomValidity("Passwords must match!");
+        }
+    }
+    else
+    {
+        passConfirm.parentElement.nextElementSibling.textContent = "";
+        passConfirm.setCustomValidity("");
+    }
+}
+
+pass.onchange = () => {
+    updatePass();
+    updatePassConfirm();
+}
+
+passConfirm.onchange = () => {
+    updatePass();
+    updatePassConfirm();
+}
+
+form.onsubmit = (e) => {
+    e.preventDefault();
+    if (form.checkValidity())
+    {
+        alert("GOOD!");
+    }
+}
