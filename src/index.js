@@ -7,7 +7,7 @@ const zipsFile = require('./data/zips.json');
 // Get only what is needed
 let codeToZipRegex = {};
 zipsFile.supplementalData.postalCodeData.postCodeRegex.forEach(item => {
-    codeToZipRegex[item["_territoryId"]] = item["__text"];
+    codeToZipRegex[item["_territoryId"]] = `^${item["__text"]}$`;
 });
 
 let namesAndCodes = alpha2ToNameFile.countries.country.map(item => {
@@ -17,8 +17,6 @@ let namesAndCodes = alpha2ToNameFile.countries.country.map(item => {
 // Remove unknown codes
 const knownCodes = Object.keys(codeToZipRegex);
 namesAndCodes = namesAndCodes.filter(item => knownCodes.includes(item.code));
-
-console.log(namesAndCodes);
 
 // Get DOM references
 const email = document.querySelector("#email");
@@ -38,3 +36,31 @@ function createOption(display, value) {
     option.text = display;
     return option;
 }
+
+// Validation events
+email.onchange = () => {
+    const valid = email.checkValidity();
+    if (!valid)
+    {
+        email.parentElement.nextElementSibling.textContent = "Email is invalid!";
+    }
+    else
+    {
+        email.parentElement.nextElementSibling.textContent = "";
+    }
+};
+
+zip.onchange = () => {
+    const countryCode = country.value;
+    const constraint = new RegExp(codeToZipRegex[countryCode], "");
+    const matches = constraint.test(zip.value);
+
+    if (!matches)
+    {
+        zip.parentElement.nextElementSibling.textContent = "Zip code is invalid!";
+    }
+    else
+    {
+        zip.parentElement.nextElementSibling.textContent = "";
+    }
+};
